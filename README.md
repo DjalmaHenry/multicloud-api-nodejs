@@ -1,6 +1,6 @@
 <p align="center">
 
-  <h5 align="center">Serverless API</h5>
+  <h1 align="center">Serverless API</h5>
  
   </p>
 </p>
