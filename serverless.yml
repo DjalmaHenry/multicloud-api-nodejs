@@ -1,6 +1,6 @@
 org: djalmahenry
-app: api-test
-service: api-test
+app: aws-test-api
+service: aws-test-api
 frameworkVersion: "3"
 
 plugins:
@@ -17,6 +17,6 @@ provider:
 
 functions:
   api:
-    handler: handler.app
+    handler: app.handler
     events:
       - httpApi: "*"
