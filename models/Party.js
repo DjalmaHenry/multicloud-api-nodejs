@@ -1,8 +1,5 @@
-const mongoose = require("mongoose");
-
-const { Schema } = mongoose;
-
-const { serviceSchema } = require("./Service");
+import mongoose, { Schema } from "mongoose";
+import { serviceSchema } from "./Service.js";
 
 const partySchema = new Schema(
   {
@@ -35,4 +32,4 @@ const partySchema = new Schema(
 
 const Party = mongoose.model("Party", partySchema);
 
-module.exports = Party;
+export default Party;

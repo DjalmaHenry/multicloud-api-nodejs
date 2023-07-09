@@ -1,6 +1,7 @@
-const router = require("express").Router();
+import express from "express";
+import serviceController from "../controllers/serviceController.js";
 
-const serviceController = require("../controllers/serviceController");
+const router = express.Router();
 
 router
   .route("/services")
@@ -14,10 +15,10 @@ router
 
 router
   .route("/services/:id")
-  .delete((req, res) => serviceController.delete(req, res));
+  .put((req, res) => serviceController.update(req, res));
 
 router
   .route("/services/:id")
-  .put((req, res) => serviceController.update(req, res));
+  .delete((req, res) => serviceController.delete(req, res));
 
-module.exports = router;
+export default router;

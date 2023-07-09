@@ -2,7 +2,8 @@
   "name": "crud-server",
   "version": "1.0.0",
   "description": "",
-  "main": "handler.js",
+  "main": "app.js",
+  "type": "module",
   "scripts": {
     "start": "nodemon app.js"
   },
@@ -13,6 +14,7 @@
     "aws-sdk": "^2.1379.0",
     "cors": "^2.8.5",
     "express": "^4.18.2",
+    "express-router": "0.0.1",
     "mongoose": "^7.3.2",
     "nodemon": "^3.0.1",
     "serverless": "^3.31.0",

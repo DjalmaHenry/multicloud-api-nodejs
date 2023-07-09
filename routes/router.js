@@ -1,13 +1,11 @@
-const router = require("express").Router();
+import express from "express";
+import servicesRouter from "./services.js";
+import partiesRouter from "./parties.js";
 
-// Services Router
-const servicesRouter = require("./services");
+const router = express.Router();
 
 router.use("/", servicesRouter);
 
-// Parties Router
-const partiesRouter = require("./parties");
-
 router.use("/", partiesRouter);
 
-module.exports = router;
+export default router;

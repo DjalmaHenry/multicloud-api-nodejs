@@ -1,6 +1,7 @@
-const router = require("express").Router();
+import express from "express";
+import partyController from "../controllers/partyController.js";
 
-const partyController = require("../controllers/partyController");
+const router = express.Router();
 
 router.route("/parties").post((req, res) => partyController.create(req, res));
 
@@ -10,10 +11,10 @@ router.route("/parties/:id").get((req, res) => partyController.get(req, res));
 
 router
   .route("/parties/:id")
-  .delete((req, res) => partyController.delete(req, res));
+  .put((req, res) => partyController.update(req, res));
 
 router
   .route("/parties/:id")
-  .put((req, res) => partyController.update(req, res));
+  .delete((req, res) => partyController.delete(req, res));
 
-module.exports = router;
+export default router;
