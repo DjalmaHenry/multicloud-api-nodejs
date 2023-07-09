@@ -1,6 +1,6 @@
-org: matheusteodoro01
-app: serverless-crud
-service: serverless-crud
+org: djalmahenry
+app: api-test
+service: api-test
 frameworkVersion: "3"
 
 plugins:
