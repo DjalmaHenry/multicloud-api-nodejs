@@ -19,6 +19,6 @@ provider:
 functions:
   api:
     handler: app.handler
-    timeout: 30
+    timeout: 10
     events:
       - httpApi: "*"
