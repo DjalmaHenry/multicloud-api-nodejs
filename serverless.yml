@@ -5,6 +5,7 @@ frameworkVersion: "3"
 
 plugins:
   - serverless-esbuild
+  - serverless-offline
 
 custom:
   esbuild:
@@ -18,5 +19,6 @@ provider:
 functions:
   api:
     handler: app.handler
+    timeout: 30
     events:
       - httpApi: "*"

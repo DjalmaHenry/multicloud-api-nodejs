@@ -1,4 +1,4 @@
-import PartyModel from "../models/Party.js";
+const PartyModel = require("../models/Party");
 
 const checkPartyBudget = (budget, services) => {
   const priceSum = services.reduce((sum, service) => sum + service.price, 0);
@@ -109,4 +109,4 @@ const partyController = {
   },
 };
 
-export default partyController;
+module.exports = partyController;

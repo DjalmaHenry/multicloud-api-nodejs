@@ -1,8 +1,8 @@
-import serverless from "serverless-http";
-import express from "express";
-import cors from "cors";
-import conn from "./db/conn.js";
-import routes from "./routes/router.js";
+const serverless = require("serverless-http");
+const express = require("express");
+const cors = require("cors");
+const conn = require("./db/conn.js");
+const routes = require("./routes/router.js");
 
 const app = express();
 
@@ -19,4 +19,4 @@ app.use("/api", routes);
 //   console.log("Servidor Online!");
 // });
 
-export const handler = serverless(app);
+module.exports.handler = serverless(app);

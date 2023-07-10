@@ -1,4 +1,4 @@
-import { Service as ServiceModel } from "../models/Service.js";
+const { Service: ServiceModel } = require("../models/Service");
 
 const serviceController = {
   create: async (req, res) => {
@@ -86,4 +86,4 @@ const serviceController = {
   },
 };
 
-export default serviceController;
+module.exports = serviceController;
