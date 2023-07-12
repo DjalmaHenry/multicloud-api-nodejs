@@ -15,10 +15,16 @@ custom:
 provider:
   name: aws
   runtime: nodejs14.x
+  vpc: 
+    securityGroupIds:
+      - sg-0479cf911761ecc22
+    subnetIds:
+      - subnet-00853b5b6264ee5df
+      - subnet-0097c80259c75b0d6
 
 functions:
   api:
     handler: app.handler
-    timeout: 10
+    timeout: 15
     events:
       - httpApi: "*"
