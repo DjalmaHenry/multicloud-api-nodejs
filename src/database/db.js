@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
 
+mongoose.set('strictQuery', true); 
+
 let conn = null;
 
 exports.connectDatabase = async () => {

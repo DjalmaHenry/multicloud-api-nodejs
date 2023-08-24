@@ -2,7 +2,7 @@
   "name": "crud-server",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "src/handlers/getAll.js",
   "scripts": {
     "start": "nodemon app.js"
   },
@@ -16,6 +16,8 @@
     "validator": "13.11.0"
   },
   "devDependencies": {
+    "nodemon": "^3.0.1",
+    "serverless-google-cloudfunctions": "^4.6.0",
     "serverless-offline": "12.0.4"
   }
 }
