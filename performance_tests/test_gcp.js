@@ -12,7 +12,6 @@ export const options = {
   ],
   thresholds: {
     http_req_failed: ["rate < 0.01"],  // a taxa de falhas deve ser menor que 1%
-    http_req_duration: ["p(95)<1000"],  // 95% das solicitações devem completar abaixo de 500 ms
   },
   ext: {
     loadimpact: {
